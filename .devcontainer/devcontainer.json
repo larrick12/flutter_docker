@@ -1,0 +1,20 @@
+{
+    "name": "flutter",
+    "context": "..",
+    "dockerFile": "../Dockerfile",
+    "remoteUser": "larrick",
+    "mounts": [
+        "source=/dev/bus/usb,target=/dev/bus/usb,type=bind"
+    ],
+    "settings": {
+        "terminal.integrated.automationShell.linux": null
+    },
+    "runArgs": [
+        "--privileged"
+    ],
+    "extensions": [
+        "dart-code.flutter"
+    ],
+    "workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/home/larrick/workspace,type=bind,consistency=delegated",
+    "workspaceFolder": "/home/larrick/workspace"
+}
